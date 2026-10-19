@@ -13,4 +13,4 @@ app.listen(process.env.PORT, () => {
     console.log(`mode: ${config.ENV}`)
     console.log(`server running on http://localhost:${process.env.PORT}`)
 })
-module.exports = app()
+module.exports = app
