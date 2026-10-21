@@ -1,0 +1,10 @@
+drop table users;
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL, 
+  email VARCHAR(50) NOT NULL, 
+  password VARCHAR(50) NOT NULL ,
+  isActive BOOLEAN DEFAULT TRUE
+);
+SELECT * from users;
