@@ -1,8 +1,9 @@
-const toOriginList = (value) =>
-    (value || '')
-        .split(',')
-        .map((origin) => origin.trim().replace(/\/+$/, ''))
-        .filter(Boolean)
+function toOriginList(value) {
+    return value
+        .split(",")
+        .map((origin) => origin.trim())
+        .filter(Boolean);
+}
 
 const config = {
     DATABASE_URL: process.env.NODE_ENV === 'development'
